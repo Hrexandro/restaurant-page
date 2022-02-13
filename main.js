@@ -1,1 +1,1 @@
-console.log("it runs");
+(()=>{"use strict";console.log("home works")})();
