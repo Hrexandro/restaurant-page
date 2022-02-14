@@ -8,7 +8,7 @@ const home = () => {
 
     document.body.appendChild(descriptionContainer);
     descriptionContainer.appendChild(description);
-
+    console.log('kpa')
 }
 
 export default home;
