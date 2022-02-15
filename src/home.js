@@ -2,6 +2,7 @@ const home = () => {
     console.log('home works')
     const descriptionContainer = document.createElement('div');
     const description = document.createElement('p');
+    description.setAttribute('id','description')
     description.textContent = 'Traditional Polish dishes prepared with love and passion using only local & natual ingredience.Traditional Polish dishes prepared with love and passion using only local & natual ingredience.Traditional Polish dishes prepared with love and passion using only local & natual ingredience.Traditional Polish dishes prepared with love and passion using only local & natual ingredience.Traditional Polish dishes prepared with love and passion using only local & natual ingredience.';
 
 

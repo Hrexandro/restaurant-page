@@ -11,6 +11,14 @@ document.head.appendChild(styleSheet);
 document.body.appendChild(header);
 header.appendChild(navbar);
 
+let subtitle = document.createElement('h2');
+header.prepend(subtitle);
+subtitle.textContent = "Traditional Polish Restaurant"
+
+let title = document.createElement('h1');
+header.prepend(title);
+title.textContent = "Swojska kuchnia"
+
 function addLinkToNavbar (name, reference){
     let link = document.createElement('a')
     link.href = reference;
