@@ -7,7 +7,7 @@ const home = () => {
     description.setAttribute('id', 'description')
 
 
-    document.body.appendChild(descriptionContainer);
+    document.getElementById('main').appendChild(descriptionContainer);
     descriptionContainer.appendChild(description);
     console.log('kpa')
 }

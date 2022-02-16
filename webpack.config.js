@@ -15,7 +15,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Traditional Polish Restaurant',
+      title: 'Symphonie Restaurant',
     }),
   ],
   output: {
