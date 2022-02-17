@@ -8,10 +8,10 @@
 
 @font-face {
     font-family: 'Gwendolyn';
-    src: url('./Gwendolyn-Regular.ttf') format('ttf');
-    font-weight: 400;
+    src: url('./Gwendolyn-Regular.ttf') format('woff2');
+    font-weight: 600;
     font-style: normal;
-}
+  }
 
 body{
     background-color:black;
