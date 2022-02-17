@@ -5,11 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack serve --open"
+    "start": "webpack serve --open",
+    "build": "webpack"
   },
   "author": "Hrexandro",
   "license": "ISC",
   "devDependencies": {
+    "file-loader": "^6.2.0",
     "html-loader": "^3.1.0",
     "html-webpack-plugin": "^5.5.0",
     "webpack": "^5.68.0",
