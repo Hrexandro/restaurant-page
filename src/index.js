@@ -1,6 +1,6 @@
 import './style.css';
 import loadHomepage from './home.js'
-
+import icon from './icon.png';
 
 // TO DO:
 // SET THE OTHER PAGES WITH CONTENT
@@ -8,6 +8,7 @@ import loadHomepage from './home.js'
 
 //font used:
 // https://fonts.google.com/specimen/Gwendolyn?preview.text=Symphonie&preview.text_type=custom&category=Handwriting
+//https://fonts.google.com/specimen/Montserrat?query=montserrat&preview.text=RESTAURANT&preview.text_type=custom
 //maybe remove bold, if not used after all
 
 let content = document.createElement('div');
@@ -18,27 +19,23 @@ document.body.appendChild(content);
 
 
 let header = document.createElement('header');
-let navbar = document.createElement('nav');
-//dodaj to jak już będzie stylesheet
-// let styleSheet = document.createElement('link');
-// styleSheet.href = 'style.css';
-// styleSheet.rel = 'stylesheet';
-// document.head.appendChild(styleSheet);
+//let navbar = document.createElement('nav');
+
 
 content.appendChild(header);
-header.appendChild(navbar);
+//header.appendChild(navbar);
 
 
-function addLinkToNavbar(name, reference) {
+function addLinkToHeader(name, reference) {
     let link = document.createElement('a')
     link.href = reference;
     link.textContent = name;
-    navbar.appendChild(link);
+    header.appendChild(link);
 }
 
-addLinkToNavbar('Home', '#')
-addLinkToNavbar('Menu', '#')
-addLinkToNavbar('Contact', '#')
+addLinkToHeader('Home', '#')
+addLinkToHeader('Menu', '#')
+addLinkToHeader('Contact', '#')
 
 let main = document.createElement('main');
 content.appendChild(main);
@@ -46,9 +43,21 @@ main.setAttribute('id', 'main')
 
 let footer = document.createElement('footer');
 content.appendChild(footer)
-footer.textContent = 'Made by Hrexandro'
 
+let footerText = document.createElement('p');
+footer.appendChild(footerText)
+footerText.textContent = 'Made by Hrexandro'
 
+let gitHubLink = document.createElement('a')
+gitHubLink.setAttribute('id','git-hub-link')
+gitHubLink.href = 'https://github.com/Hrexandro'
+footer.appendChild(gitHubLink);
+
+let gitHubIcon = new Image();
+gitHubIcon.src = icon;
+gitHubIcon.setAttribute('id','git-hub-icon')
+
+gitHubLink.appendChild(gitHubIcon);
 
 
 loadHomepage();

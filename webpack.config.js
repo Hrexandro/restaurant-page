@@ -1,9 +1,7 @@
 const path = require('path');
 
 
-module.exports = {
 
-};
 
 module.exports = {
   mode: 'development',
@@ -22,6 +20,10 @@ module.exports = {
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
+        type: 'asset/resource',
+      },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: 'asset/resource',
       },
     ],
