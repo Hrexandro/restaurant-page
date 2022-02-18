@@ -1,20 +1,14 @@
 import './style.css';
+import loadHomepage from './home.js'
 
 
-const loadHomepage = () => {
-    console.log('home works')
+// TO DO:
+// SET THE OTHER PAGES WITH CONTENT
+// ADD PAGE SWITCHING LOGIC TO index.JS
 
-    let subtitle = document.createElement('p');
-    document.getElementById('main').appendChild(subtitle);
-    subtitle.textContent = "Restaurant"
-
-    let title = document.createElement('p');
-    document.getElementById('main').prepend(title);
-    title.textContent = "Symphonie"
-    title.setAttribute('class', 'cursive')
-
-    console.log('home finish')
-}
+//font used:
+// https://fonts.google.com/specimen/Gwendolyn?preview.text=Symphonie&preview.text_type=custom&category=Handwriting
+//maybe remove bold, if not used after all
 
 let content = document.createElement('div');
 console.log(content)
