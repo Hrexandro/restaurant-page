@@ -1,6 +1,8 @@
 import './style.css';
 import loadHomepage from './home.js'
 import icon from './icon.png';
+import loadContactPage from './contact.js'
+import loadMenuPage from './menu.js'
 
 // TO DO:
 // SET THE OTHER PAGES WITH CONTENT
@@ -29,6 +31,7 @@ content.appendChild(header);
 function addLinkToHeader(name, reference) {
     let link = document.createElement('a')
     link.href = reference;
+    link.setAttribute('id',`${name}-link`);
     link.textContent = name;
     header.appendChild(link);
 }
@@ -61,3 +64,38 @@ gitHubLink.appendChild(gitHubIcon);
 
 
 loadHomepage();
+
+function clearPage(){
+    main.innerHTML = "";
+}
+
+function addPageSwitch (elementId, action){
+    document.getElementById(elementId).addEventListener('click',()=>{
+        main.style.cssText = "";
+        clearPage();
+        action();
+    })
+
+}
+
+addPageSwitch('Home-link',loadHomepage);
+addPageSwitch('Contact-link',loadContactPage);
+addPageSwitch('Menu-link',loadMenuPage);
+// document.getElementById('Home-link').addEventListener('click',()=>{
+//     clearPage();
+//     loadHomepage();
+// })
+
+// document.getElementById('Home-link').addEventListener('click',()=>{
+//     clearPage();
+//     loadHomepage();
+// })
+
+// document.getElementById('Home-link').addEventListener('click',()=>{
+//     clearPage();
+//     loadHomepage();
+// })
+
+// footerText.addEventListener('click',()=>{
+//     clearPage();
+// })
