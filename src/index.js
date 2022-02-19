@@ -5,16 +5,6 @@ import treble from './treble.png'
 import loadContactPage from './contact.js';
 import loadMenuPage from './menu.js';
 
-// TO DO:
-// SET THE OTHER PAGES WITH CONTENT
-// ADD PAGE SWITCHING LOGIC TO index.JS
-
-//font used:
-// https://fonts.google.com/specimen/Gwendolyn?preview.text=Symphonie&preview.text_type=custom&category=Handwriting
-//https://fonts.google.com/specimen/Montserrat?query=montserrat&preview.text=RESTAURANT&preview.text_type=custom
-//maybe remove bold, if not used after all
-//<a href="https://www.flaticon.com/free-icons/music" title="music icons">Music icons created by Freepik - Flaticon</a>
-
 let content = document.createElement('div');
 console.log(content)
 content.setAttribute('id', 'content');
@@ -25,16 +15,10 @@ const trebleIconLink = document.createElement('link')
 document.head.appendChild(trebleIconLink)
 trebleIconLink.rel = 'icon';
 trebleIconLink.href = treble;
-// <link rel="icon" href="images/book.png">
-
 
 let header = document.createElement('header');
-//let navbar = document.createElement('nav');
-
 
 content.appendChild(header);
-//header.appendChild(navbar);
-
 
 function addLinkToHeader(name, reference) {
     let link = document.createElement('a')
@@ -70,7 +54,6 @@ gitHubIcon.setAttribute('id','git-hub-icon')
 
 gitHubLink.appendChild(gitHubIcon);
 
-
 loadHomepage();
 
 function clearPage(){
@@ -98,24 +81,7 @@ function addPageSwitch (elementId, action){
 addPageSwitch('Home-link',loadHomepage);
 addPageSwitch('Contact-link',loadContactPage);
 addPageSwitch('Menu-link',loadMenuPage);
-// document.getElementById('Home-link').addEventListener('click',()=>{
-//     clearPage();
-//     loadHomepage();
-// })
 
-// document.getElementById('Home-link').addEventListener('click',()=>{
-//     clearPage();
-//     loadHomepage();
-// })
-
-// document.getElementById('Home-link').addEventListener('click',()=>{
-//     clearPage();
-//     loadHomepage();
-// })
-
-// footerText.addEventListener('click',()=>{
-//     clearPage();
-// })
 console.log(main)
 
 export {main};

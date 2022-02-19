@@ -49,8 +49,6 @@ body{
 .subtitle{
     color:#c59d5f;
     font-size:1.5em;
-
- 
 }
 
 #content{
@@ -68,11 +66,6 @@ header {
     align-items: center;
     text-align: center;
     justify-content: center;
-    /* background-color: #c59d5f; */
-
-    /* background-color:white; */
-
-    /* width:100%; */
     border-bottom:2px double #c59d5f;
     height: 12vh;
 
@@ -90,8 +83,7 @@ header {
 
 footer{
     border-top:2px double #c59d5f;
-    /* height: 12vh;
-    position: fixed; */
+
     height: 12vh;
     color: white;
     font-size: 0.9em;
@@ -123,7 +115,6 @@ footer p{
 
 header a {
     text-decoration: none;
-    /* color: white; */
     color:white;
     margin: 1em;
     position: relative;
@@ -169,31 +160,7 @@ hr{
     margin-top:0.5em;
 }
 
-h2{
-
-}
-
 h3{
     margin-top:1em;
     color:#c59d5f; 
 }
-
-
-
-
-/* might remove those, fell out of use
-h1 {
-    /* color: white; */
-    /* color:white;
-    margin-left: 3vw;
-    font-size:4em;
-} */
-
-/* h2{ */
-    /* color: white; */
-    /* color:white;
-    margin-left: 3vw;
-    font-size:2em;
-    margin-top:6vh; */
-    /* align-self:flex-end; */
-/* } */ 

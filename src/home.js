@@ -1,6 +1,4 @@
 const loadHomepage = () => {
-    console.log('home works');
-
     let subtitle = document.createElement('p');
     document.getElementById('main').appendChild(subtitle);
     subtitle.textContent = "RESTAURANT";
@@ -11,7 +9,6 @@ const loadHomepage = () => {
     title.textContent = "Symphonie";
     title.classList.add('cursive');
     title.classList.add('title');
-    console.log('home finish');
 }
 
 export default loadHomepage;
