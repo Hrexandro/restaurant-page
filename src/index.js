@@ -1,6 +1,7 @@
 import './style.css';
 import loadHomepage from './home.js';
 import icon from './icon.png';
+import treble from './treble.png'
 import loadContactPage from './contact.js';
 import loadMenuPage from './menu.js';
 
@@ -12,12 +13,19 @@ import loadMenuPage from './menu.js';
 // https://fonts.google.com/specimen/Gwendolyn?preview.text=Symphonie&preview.text_type=custom&category=Handwriting
 //https://fonts.google.com/specimen/Montserrat?query=montserrat&preview.text=RESTAURANT&preview.text_type=custom
 //maybe remove bold, if not used after all
+//<a href="https://www.flaticon.com/free-icons/music" title="music icons">Music icons created by Freepik - Flaticon</a>
 
 let content = document.createElement('div');
 console.log(content)
 content.setAttribute('id', 'content');
 console.log(document.body)
 document.body.appendChild(content);
+
+const trebleIconLink = document.createElement('link')
+document.head.appendChild(trebleIconLink)
+trebleIconLink.rel = 'icon';
+trebleIconLink.href = treble;
+// <link rel="icon" href="images/book.png">
 
 
 let header = document.createElement('header');
