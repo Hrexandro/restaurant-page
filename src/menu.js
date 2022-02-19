@@ -1,17 +1,21 @@
+import {main} from './index.js'
+
 const loadMenuPage = () => {
-    console.log('home works');
 
-    let subtitle = document.createElement('p');
-    document.getElementById('main').appendChild(subtitle);
-    subtitle.textContent = "soon";
-    subtitle.setAttribute('class', 'subtitle');
+    function generateDishEntry(){
+        let dishDiv = document.createElement('div');
+        let dishName = document.createElement('h3');
 
-    let title = document.createElement('p');
-    document.getElementById('main').prepend(title);
-    title.textContent = "To be added";
-    title.setAttribute('class', 'cursive');
+        main.appendChild(dishDiv);
+        dishDiv.appendChild(dishName);
+        dishName.textContent = "Foie Grass"
 
-    console.log('home finish');
+
+    }
+
+    generateDishEntry()
+
+
 }
 
 export default loadMenuPage;

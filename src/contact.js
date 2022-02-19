@@ -1,8 +1,9 @@
 import mapImage from './map.png';
+import {main} from './index.js';
 
 const loadContactPage = () => {
-    let main = document.getElementById('main');
-    main.style.cssText = "display: flex; justify-content: center;"
+    console.log(main)
+    //main.style.cssText = "display: flex; justify-content: center;"
 
 
     let contact = document.createElement('div');

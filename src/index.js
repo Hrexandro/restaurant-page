@@ -1,8 +1,8 @@
 import './style.css';
-import loadHomepage from './home.js'
+import loadHomepage from './home.js';
 import icon from './icon.png';
-import loadContactPage from './contact.js'
-import loadMenuPage from './menu.js'
+import loadContactPage from './contact.js';
+import loadMenuPage from './menu.js';
 
 // TO DO:
 // SET THE OTHER PAGES WITH CONTENT
@@ -71,7 +71,13 @@ function clearPage(){
 
 function addPageSwitch (elementId, action){
     document.getElementById(elementId).addEventListener('click',()=>{
-        main.style.cssText = "";
+        if (elementId==="Home-link"){
+            main.style.cssText = "";
+        }
+        else {
+            main.style.cssText = "display: flex; justify-content: center;"
+        }
+
         clearPage();
         action();
     })
@@ -99,3 +105,6 @@ addPageSwitch('Menu-link',loadMenuPage);
 // footerText.addEventListener('click',()=>{
 //     clearPage();
 // })
+console.log(main)
+
+export {main};
