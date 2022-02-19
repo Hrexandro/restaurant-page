@@ -9,8 +9,8 @@ const loadHomepage = () => {
     let title = document.createElement('p');
     document.getElementById('main').prepend(title);
     title.textContent = "Symphonie";
-    title.setAttribute('class', 'cursive');
-
+    title.classList.add('cursive');
+    title.classList.add('title');
     console.log('home finish');
 }
 

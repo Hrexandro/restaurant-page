@@ -33,9 +33,17 @@ body{
     background-color:black;
 }
 
+
+
 .cursive{
     font-family: 'Gwendolyn';
     font-size:6em;
+}
+
+.title{
+    margin-top: 2em;
+    color:white;
+    
 }
 
 .subtitle{
@@ -94,10 +102,24 @@ footer{
     justify-content: center;
 }
 
+footer p{
+    color: white;
+}
+
 #map{
     margin-top:1em;
 }
 
+#dish-div{
+    margin-top:3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#dish-div p{
+    color:#262626;
+}
 
 header a {
     text-decoration: none;
@@ -121,13 +143,39 @@ header a:hover {
     transform: translateY(6px);
 }
 
+main::-webkit-scrollbar-thumb {
+    background-color: #c59d5f;
+    outline: 1px solid white;
+}
+
+main::-webkit-scrollbar {
+    width: 1em;
+    background-color: white;
+    outline: 1px solid white;
+  }
+
+main{
+    height: 100%;
+    overflow-y: auto; 
+}
+
 p{
     color:white;
 
 }
+hr{
+    border: 1px solid #c59d5f;
+    width:50%;
+    margin-top:0.5em;
+}
+
+h2{
+
+}
 
 h3{
-    
+    margin-top:1em;
+    color:#c59d5f; 
 }
 
 

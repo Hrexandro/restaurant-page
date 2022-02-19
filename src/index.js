@@ -77,6 +77,9 @@ function addPageSwitch (elementId, action){
         else {
             main.style.cssText = "display: flex; justify-content: center;"
         }
+        if (elementId==="Menu-link"){
+            main.style.backgroundColor = "white";
+        }
 
         clearPage();
         action();
